@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
                         val currentTime = System.currentTimeMillis()
                         if (currentTime - lastShakeTime > 1000) {
                             lastShakeTime = currentTime
-                            mainViewModel.rollDice()
+                            mainViewModel.animateRollDice()
                         }
                     }
                 }
@@ -84,7 +84,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     bottomBar = {
                         BottomNavigationBar(
-                            currentRoute = navController.currentDestination?.route,
+                            navController = navController,
                             onNavigate = { navController.navigate(it) }
                         )
                     }

@@ -31,10 +31,12 @@ fun AppNavigation(
         composable(NavRoutes.PRESETS) {
             PresetsScreen(
                 viewModel = presetsViewModel,
-                onPresetSelected = { preset ->
+                onPresetSelected = { preset, navigateToMain ->
                     mainViewModel.setDiceType(preset.diceType)
                     mainViewModel.setDiceCount(preset.diceCount)
-                    mainViewModel.rollDice()
+                    if (navigateToMain) {
+                        navController.navigate(NavRoutes.MAIN)
+                    }
                 }
             )
         }

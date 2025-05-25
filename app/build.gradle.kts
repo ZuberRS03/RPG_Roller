@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.androidx.room.runtime.android)
     implementation("androidx.navigation:navigation-compose:2.9.0")
     implementation(libs.androidx.material.icons.extended)
+    implementation(libs.accompanist.flowlayout)
+    implementation("com.google.accompanist:accompanist-flowlayout:0.34.0")
 
     kapt("androidx.room:room-compiler:2.7.1")
 
