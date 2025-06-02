@@ -9,7 +9,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.flowlayout.FlowRow
-import com.example.rpghelper.presentation.screen_main.MainViewModel
 
 import com.example.rpghelper.ui.theme.*
 

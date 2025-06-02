@@ -7,8 +7,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.SportsEsports
 import androidx.compose.material.icons.filled.Star
-import androidx.compose.material3.AlertDialogDefaults.containerColor
-import androidx.compose.material3.ListItemDefaults.contentColor
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
@@ -16,7 +14,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.rpghelper.presentation.navigation.NavRoutes
 import com.example.rpghelper.ui.theme.AccentTurquoise
 import com.example.rpghelper.ui.theme.BottomBarBackground
-import com.example.rpghelper.ui.theme.DarkBackground
 import com.example.rpghelper.ui.theme.TextWhite
 
 data class NavItem(val route: String, val icon: ImageVector, val label: String)

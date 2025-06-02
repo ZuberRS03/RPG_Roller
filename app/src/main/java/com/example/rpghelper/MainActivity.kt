@@ -4,13 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.example.rpghelper.ui.theme.RPGHelperTheme
 
@@ -20,13 +16,9 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import kotlin.math.sqrt
 
-import com.example.rpghelper.AppModule
-import com.example.rpghelper.domain.repository.DiceRepository
 import com.example.rpghelper.presentation.navigation.AppNavigation
 import com.example.rpghelper.presentation.navigation.components.BottomNavigationBar
-import com.example.rpghelper.presentation.screen_history.HistoryScreen
 import com.example.rpghelper.presentation.screen_history.HistoryViewModel
-import com.example.rpghelper.presentation.screen_main.MainScreen
 import com.example.rpghelper.presentation.screen_main.MainViewModel
 import com.example.rpghelper.presentation.screen_presets.PresetsViewModel
 
@@ -77,7 +69,7 @@ class MainActivity : ComponentActivity() {
             SensorManager.SENSOR_DELAY_UI
         )
 
-        // 🎨 UI i nawigacja
+        // UI i nawigacja
         setContent {
             val navController = rememberNavController()
             RPGHelperTheme {

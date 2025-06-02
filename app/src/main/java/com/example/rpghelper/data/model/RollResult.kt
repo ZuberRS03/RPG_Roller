@@ -2,7 +2,6 @@ package com.example.rpghelper.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.time.LocalDateTime
 
 @Entity(tableName = "roll_results")
 data class RollResult(
